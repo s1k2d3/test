@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>约见管理-有点</title>
+<link rel="stylesheet" type="text/css" href="__ROOT__/Admin/css/css.css" />
+<script type="text/javascript" src="__ROOT__/Admin/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/page.js" ></script> -->
+</head>
+
+<body>
+	<div id="pageAll">
+		<div class="pageTop">
+			<div class="page">
+				<img src="__ROOT__/Admin/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+					href="#">公共管理</a>&nbsp;-</span>&nbsp;意见管理
+			</div>
+		</div>
+
+		<div class="page">
+			<!-- banner页面样式 -->
+			<div class="connoisseur">
+				<div class="conform">
+					<form>
+						<div class="cfD">
+							<input class="addUser" type="text" placeholder="输入用户名/ID/手机号/城市" />
+							<button class="button">搜索</button>
+						</div>
+					</form>
+				</div>
+				<!-- banner 表格 显示 -->
+				<div class="conShow">
+					<table border="1" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="66px" class="tdColor tdC">序号</td>
+							<td width="355px" class="tdColor">预约时间</td>
+							<td width="260px" class="tdColor">预约人姓名</td>
+							<td width="275px" class="tdColor">预约人性别</td>
+							<td width="290px" class="tdColor">预约人手机号</td>
+							<td width="290px" class="tdColor">是否审核</td>
+							<td width="130px" class="tdColor">操作</td>
+						</tr>
+						{volist name="arr" id="vo"}
+						<tr>
+							<td>{$vo.appointment_id}</td>
+							<td>{$vo.start}--{$vo.end}</td>
+							<td>{$vo.appointment_name}</td>
+							<td>
+								<?php if($vo['appointment_sex'] == 1){
+									echo "男";
+								}else{
+									echo "女";
+								}?>
+							</td>
+							<td>{$vo.appointment_tel}</td>
+							<td>
+								<?php if($vo['appointment_status'] == 1){
+									echo "已审核";
+								}else if($vo['appointment_status'] == 2){
+									echo "未审核";
+								}else{
+									echo "审核驳回";
+								}?>
+							</td>
+							<td>
+								<?php if($vo['appointment_status'] == 1){
+									echo "";
+								}else if($vo['appointment_status'] == 2){ ?>
+									<a href="examine.html?id={$vo.appointment_id}"><img class="operation" src="__ROOT__/Admin/img/update.png"></a>
+								<?php }else{ ?>
+									<a href="del.html?id={$vo.appointment_id}"> <img class="operation delban"
+								src="__ROOT__/admin/img/delete.png"></a>
+								<?php } ?>
+							</td>
+						</tr>
+					{/volist}
+					</table>
+				</div>
+				<!-- banner 表格 显示 end-->
+			</div>
+			<!-- banner页面样式end -->
+		</div>
+	</div>

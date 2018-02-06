@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name='keywords' content='北京租房,北京租房网,北京租房信息网,北京租房子,北京房屋出租,北京租房价格,巴乐兔租房'>
+	<meta name='description' content='【零佣金,月付租,房东直租】【巴乐兔租房】是北京租房领导品牌,巴乐兔努力为您提供经济舒适的房源信息,让您一步到位租到好房子!'>
+	<title>北京租房_北京租房网_北京房屋出租-【巴乐兔租房 零佣金 月付租】</title>
+    <link rel="shortcut icon" href="//js.baletoo.cn/static/pc/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="index/css/common.css?201801"/>
+    <script src="index/js/jquery.js"></script>
+	<script src="index/js/layui.js"></script>
+    <!--[if lt IE 9]>
+        <script src="other/ww/json/json.js" charset="utf-8"></script>
+    <![endif]-->
+    <script src="index/other/??h5.openim.sdk/1.0.6/scripts/wsdk.js,h5.openim.kit/0.3.3/scripts/kit.js?pc=1" charset="utf-8"></script>
+    <script src="index/js/sea.js"></script>
+    <script src="index/js/retina.min.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            alias: {
+                'monitor':'//js.baletoo.cn/static/pc/js/monitor_call.js?20189'
+            }
+        });
+        var  _hmt  =  _hmt  ||  [];
+        var g_config = [];
+        g_config['city'] = 'bj';
+        g_config['from'] = 'PC';
+        g_config['dir'] = '//js.baletoo.cn';
+        g_config['model_name'] = '';
+    </script>
+</head>
+<body>
+<!--选择城市弹层-->
+<div class="cityPop">
+    <div class="popClose">
+        <span><img src="index/images/close.png" /></span>
+    </div>
+    <div class="cityPop_title">
+        <h2>选择城市</h2>
+        <ul>
+            <li>热门城市：</li>
+            <li><a id="navM2" mark="I2" href="http://bj.baletu.com/">北京</a></li>
+            <li><a id="navM1" mark="I1" href="http://sh.baletu.com/">上海</a></li>
+            <li><a id="navM2" mark="I2" href="http://gz.baletu.com/">广州</a></li>
+            <li><a id="navM2" mark="I2" href="http://sz.baletu.com/">深圳</a></li>
+        </ul>
+    </div>
+    <div class="cityPop_list">
+        <ul>
+            <li>
+                <span class="nameIcon">B</span>
+                <a id="navM2" mark="I2" href="http://bj.baletu.com/">北京</a>
+            </li>
+            <li>
+                <span class="nameIcon">C</span>
+                <a id="navM2" mark="I2" href="http://cd.baletu.com/">成都</a>
+                <a id="navM2" mark="I2" href="http://cq.baletu.com/">重庆</a>
+            </li>
+            <li>
+                <span class="nameIcon">D</span>
+                <a id="navM2" mark="I2" href="http://dl.baletu.com/">大连</a>
+            </li>
+            <li>
+                <span class="nameIcon">G</span>
+                <a id="navM2" mark="I2" href="http://gz.baletu.com/">广州</a>
+            </li>
+            <li>
+                <span class="nameIcon">H</span>
+                <a id="navM2" mark="I2" href="http://hz.baletu.com/">杭州</a>
+            </li>
+            <li>
+                <span class="nameIcon">N</span>
+                <a id="navM2" mark="I2" href="http://nj.baletu.com/">南京</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="nameIcon">S</span>
+                <a id="navM1" mark="I1" href="http://sh.baletu.com/">上海</a>
+                <a id="navM2" mark="I2" href="http://sz.baletu.com/">深圳</a>
+                <a id="navM2" mark="I2" href="http://suzhou.baletu.com/">苏州</a>
+            </li>
+            <li>
+                <span class="nameIcon">T</span>
+                <a id="navM2" mark="I2" href="http://tj.baletu.com/">天津</a>
+            </li>
+            <li>
+                <span class="nameIcon">W</span>
+                <a id="navM2" mark="I2" href="http://wh.baletu.com/">武汉</a>
+            </li>
+            <li>
+                <span class="nameIcon">X</span>
+                <a id="navM2" mark="I2" href="http://xa.baletu.com/">西安</a>
+            </li>
+            <li>
+                <span class="nameIcon">Z</span>
+                <a id="navM2" mark="I2" href="http://zz.baletu.com/">郑州</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="popfull"></div>
+<div class="header header-w">
+    <div class="out">
+        <div class="logo">
+            <a href="/">
+                <img src="index/images/logo@2x.png" data-rjs="//js.baletoo.cn/static/pc/images/mac/index/logo@3.png"/>
+            </a>
+        </div>
+        <div class="region" style="">
+            <a href="javascript:void(0)">
+                <!-- <span class="icon icon-pos-grey"></span> -->
+                <span class="icon icon-down-grey"></span>
+                北京</a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active"><a id="navM3" mark="I3" href="http://bj.baletu.com/">首页</a><div class="nav-line"></div></li>
+                <li ><a id="navM4" mark="I4" href="http://bj.baletu.com/zhaofang/" >立即找房</a><div class="nav-line"></div></li>
+                <li ><a id="navM6" mark="I6" href="http://bj.baletu.com/creathouse/" >发布房源</a><div class="nav-line"></div></li>
+                <li >
+                    <a href="javascript:;" onclick="toroommate()">找室友</a>
+                    <div class="nav-line"></div>
+                </li>
+                <li style="display: none;"><a id="navM6" mark="I6" href="http://bj.baletu.com/shequ/"  >兔社区</a><div class="nav-line"></div></li>
+                <li class="downApp-link ">
+                    <a id="navM5" mark="主菜单" href="http://bj.baletu.com/downapp/" >下载APP</a><div class="nav-line"></div>
+                </li>
+            </ul>
+        </div>
+                <div class="login-link login-link-new">
+            <ul class="clearfix">
+                 <li><span class="icon_people_black"></span></li>
+                <li><a id="navM8" mark="I8" href="/register">注册</a></li>
+                <li><a id="navM7" mark="I7" href="/login?return_url=bj.baletu.com%2F">登录</a></li>
+            </ul>
+        </div>
+            </div>
+</div>
+<script type="text/javascript">
+    // if($('.header').hasClass('header-r')){
+    //     console.log(2);
+    //     $('.user-down').css({"top":"-19px"});
+    // }else if($('.header').hasClass('header-w')){
+    //     console.log(1);
+    //     $('.user-down').css({"top":"5px"});
+    // }
+    $(".region").click(function(){
+        $(".cityPop").addClass("cityPop-show");
+        $(".popfull").show();
+    });
+    $(".popClose").click(function(){
+        $(".cityPop").removeClass("cityPop-show");
+        $(".popfull").hide();
+    });
+    $(".popfull").click(function(){
+        $(".cityPop").removeClass("cityPop-show");
+        $(".popfull").hide();
+    });
+    $(".logout").click(function(){
+        $.ajax({
+            url:"/login/logout",
+            type: 'POST',
+            data: '',
+            dataType: 'json',
+            beforeSend: function() {
+            },
+            success: function(msg) {
+                if(msg.status == 0){
+                    window.location.reload();
+                }
+            }
+        });
+    });
+    var cityname=$('.region').children("a").get(0).innerText;
+    var cityname_py='';
+    switch (cityname) {
+        case '上海':
+            cityname_py='shanghai';
+            break;
+        case '北京':
+            cityname_py='beijing';
+            break;
+        case '深圳':
+            cityname_py='shenzhen';    
+            break;
+        case '杭州':
+            cityname_py='hangzhou';
+            break;
+        case '南京':
+            cityname_py='nanjing';
+            break;
+        case '苏州':
+            cityname_py='suzhou';
+            break;
+        case '广州':
+            cityname_py='guangzhou';
+            break;
+        case '成都':
+            cityname_py='chengdu';
+            break;
+        case '大连':
+            cityname_py='dalian';
+            break;
+        case '天津':
+            cityname_py='tianjin';
+            break;
+        case '重庆':
+            cityname_py='chongqing';
+            break;
+        case '武汉':
+            cityname_py='wuhan';
+            break;
+        case '西安':
+            cityname_py='xian';
+            break;
+        case '郑州':
+            cityname_py='zhengzhou';
+            break;
+        default:
+            break;
+    }
+    //console.log(cityname_py);
+    function toroommate(){
+        if(cityname_py==''){
+            cityname_py='shanghai';
+        }
+        window.location.href="http://www.baletu.com/roommate/findsublet_"+cityname_py;
+    } 
+</script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="index/css/swiper-3.4.2.min.css">
+        <style>
+    .swiper-container {
+        width: 100%;
+        height: auto;
+        *height:500px;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    }
+    .swiper-container .swiper-slide{ height: 500px; }
+    .swiper-container .swiper-slide a{display: block; height: 100%;}
+    .swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{
+        width: 20px;
+        height: 120px;
+        background-image: url("index/images/banner-btn-new.png");
+        background-size:inherit;
+    }
+    .swiper-container .swiper-button-prev{background-position: 0 0;position: absolute;left: 10%;top: 40%;}
+    .swiper-container .swiper-button-next{background-position: -20px 0px;position: absolute;right: 10%;top: 40%;}
+    .swiper-container .swiper-button-prev:hover{background-position: -40px 0px;}
+    .swiper-container .swiper-button-next:hover{background-position: -60px 0px;}
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5), /* 注意这里的写法比较特殊 */
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+           .swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{
+                width: 20px;
+                height: 120px;
+                background-image: url("index/images/banner-btn_new@3x.png");
+                background-size:400% auto;
+            }
+            .swiper-container .swiper-button-prev{background-position: -10 0;}
+            .swiper-container .swiper-button-next{background-position: -20px 0px;}
+            .swiper-container .swiper-button-prev:hover{background-position:-40px 0px;}
+            .swiper-container .swiper-button-next:hover{background-position:-60px 0px;}
+       }
+    @media only screen and (max-width:1280px){
+        .swiper-container .swiper-button-prev{left: 20px;}
+        .swiper-container .swiper-button-next{right: 20px;}
+    }
+    @media only screen and(max-width: 1440px){
+        .swiper-container .swiper-button-prev{left: 20px;}
+        .swiper-container .swiper-button-next{right: 20px;}
+    }
+    @media only screen and(max-width: 1920px){
+        .swiper-container .swiper-button-prev{left: 20px;}
+        .swiper-container .swiper-button-next{right: 20lpx;}
+    }
+    </style>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background:url(http://cdn.baletoo.cn/Uploads/bnanerImageUrl/1/99/oss_5a1d3ca04bf27.png) center center no-repeat;"><a href="javascript:void(0)" target="_blank">&nbsp;</a></div>
+                  <div class="swiper-slide" style="background:url(http://cdn.baletoo.cn/Uploads/bnanerImageUrl/1/148/oss_5a6a8de6dd687.png) center center no-repeat;"><a href="http://u5585314.viewer.maka.im/pcviewer/IQ468ASZ" target="_blank">&nbsp;</a></div>
+                  <div class="swiper-slide" style="background:url(http://cdn.baletoo.cn/Uploads/bnanerImageUrl/1/121/oss_5a6a8ddb6f7ca.jpg) center center no-repeat;"><a href="/activity/mascot" target="_blank">&nbsp;</a></div>
+                  <div class="swiper-slide" style="background:url(http://cdn.baletoo.cn/Uploads/bnanerImageUrl/1/67/oss_5a6a8dbe1086f.png) center center no-repeat;"><a href="/activity/activitydetail?id=67" target="_blank">&nbsp;</a></div>
+           </div>
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+ <!--swiper-->
+<script src="index/js/swiper-3.4.2.jquery.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoHeight: true, //enable auto height
+        loop : true,
+        //scrollbar:'.swiper-scrollbar',
+        autoplay: 6000,
+    });
+    //swiper.lockSwipes();
+    </script>
+ <!--swiper end-->
+<!--search-->
+<div class="search-banner">
+    <div class="search-main">
+        <form name="form_search" onsubmit="return searchForm();">
+            <input name="prefixUrl" value="/zhaofang/" autoComplete="off" type="hidden" />
+            <ul class="clearfix">
+                <li style="*width: 460px;"><input type="text" name="kw" class="search-input" autoComplete="off" placeholder="输入区域、板块或小区名开始找房" /></li>
+                <li style="*width: 80px;"><a id="index_search" mark="首页" class="btn-red btn-search"  href="javascript:void(0);" onclick="javascript:searchForm();" >搜索</a></li>
+                <li style="display: none;"><a id="index_map" mark="I6" class="btn-map" href="/map"><span class="icon icon-pos-red"></span> 地图找房</a></li>
+            </ul>
+        </form>
+        <div class="search-bot">
+            热门搜索：
+                            <a href="/zhaofang/c1/">合租</a>
+                            <a href="/zhaofang/t1/">月付</a>
+                            <a href="/zhaofang/kw回龙观/">回龙观</a>
+                            <a href="/zhaofang/c1/">合租</a>
+                            <a href="/zhaofang/kw如果寓公寓/">如果寓公寓</a>
+                            <a href="/zhaofang/kw林格/">林格</a>
+                    </div>
+    </div>
+</div>
+<!--search end-->
+<div class="pageLink" id="shouyu_icon">
+    <div class="out clearfix">
+        <div class="pageLink-unit " >
+            <a href="/zhaofang/c2/"  id="zhengzu_new" alt="整租" class="pageLink-pic pageLink-pic-zu">
+              <div class="pageLink-unit-word">整租</div>   
+             <div class="pageLink-unit-bg"></div>
+            </a>
+        </div>
+        <div class="pageLink-unit pageLink-unit-new" >
+            <a href="/zhaofang/t1/" alt="月付房源" id="yuefu_new" class="pageLink-pic pageLink-pic-yf"> 
+                <div class="pageLink-unit-word">月付房源</div>  
+                <div class="pageLink-unit-bg"></div>
+            </a>
+        </div>
+        <div class="pageLink-unit pageLink-unit-new" >
+            <a href="/map/"  alt="地图找房" id="ditu_new" class="pageLink-pic pageLink-pic-dt">  
+                <div class="pageLink-unit-word">地图找房</div>  
+                <div class="pageLink-unit-bg"></div>
+            </a>
+        </div>
+        <div class="pageLink-unit pageLink-unit-new" >
+            <a href="/zhaofang/z1000,2000/" id="qianyuan_new"  alt="千元好房" class="pageLink-pic pageLink-pic-zz">
+                <div class="pageLink-unit-word">千元好房</div>  
+                <div class="pageLink-unit-bg"></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="main-index out">
+    <div class="list-index" >
+        <div class="list-index-title"><h2>整租房源</h2><a href="/zhaofang/c2/" class="more" id="zhengzu_more">更多房源</a></div>
+        <div class="list-index-center clearfix" id="index_zhengzu">
+            {volist name='arr1' id='vo'}
+                <div class="list-index-unit">
+                    <a href="{:url('index/show')}?id={$vo.house_id}" pos = "1" class="list-index-pic">
+                        <img width="360" alt="{$vo.h_name}" src="__ROOT__/index/{$vo.img}">
+                    </a>
+                    <div class="list-index-text">
+                        <div class="unit-index-title">
+                            <a href="{:url('index/show')}?id={$vo.house_id}">{$vo.h_name}</a>
+                            <span class="price"><em>￥</em>{$vo.price}</span>
+                        </div>
+                        <div class="list-pic-ps">{$vo.address}-{$vo.address_desc} | {$vo.addressment} | {$vo.area}</div>
+                        <div class="pro-lab">
+                            <span>月付</span>
+                            <span>近地铁</span>
+                            <span>独立厨房</span>
+                            <span>非一楼</span>
+                        </div>
+                    </div>
+                </div>
+            {/volist}
+        </div>
+    </div>
+    <div class="list-index">
+        <div class="list-index-title"><h2>合租房源</h2><a href="/zhaofang/c1/" class="more" id="hezu_more">更多房源</a></div>
+        <div class="list-index-center clearfix" id="index_hezu">
+                {volist name='arr2' id='vo'}
+                <div class="list-index-unit">
+                    <a href="{:url('index/show')}?id={$vo.house_id}" pos = "1" class="list-index-pic">
+                        <img width="360" alt="艺苑桐城" src="__ROOT__/index/{$vo.img}">
+                    </a>
+                    <div class="list-index-text">
+                        <div class="unit-index-title">
+                            <a href="{:url('index/show')}?id={$vo.house_id}">{$vo.h_name}</a>
+                            <span class="price"><em>￥</em>{$vo.price}</span>
+                        </div>
+                        <div class="list-pic-ps">{$vo.address}-{$vo.address_desc} | {$vo.addressment} | {$vo.area}</div>
+                        <div class="pro-lab">
+                            <span>月付</span>
+                            <span>近地铁</span>
+                            <span>独立厨房</span>
+                            <span>非一楼</span>
+                        </div>
+                    </div>
+                </div>
+            {/volist}
+        </div>
+    </div>
+    <div class="list-index" >
+        <div class="list-index-title"><h2>公寓房源</h2><a href="/zhaofang/c3/" class="more" id="gongyu_more">更多房源</a></div>
+        <div class="list-index-center clearfix" id="index_department">
+                 {volist name='arr3' id='vo'}
+                <div class="list-index-unit">
+                    <a href="{:url('index/show')}?id={$vo.house_id}" pos = "1" class="list-index-pic">
+                        <img width="360" alt="艺苑桐城" src="__ROOT__/index/{$vo.img}">
+                    </a>
+                    <div class="list-index-text">
+                        <div class="unit-index-title">
+                            <a href="{:url('index/show')}?id={$vo.house_id}">{$vo.h_name}</a>
+                            <span class="price"><em>￥</em>{$vo.price}</span>
+                        </div>
+                        <div class="list-pic-ps">{$vo.address}-{$vo.address_desc} | {$vo.addressment} | {$vo.area}</div>
+                        <div class="pro-lab">
+                            <span>月付</span>
+                            <span>近地铁</span>
+                            <span>独立厨房</span>
+                            <span>非一楼</span>
+                        </div>
+                    </div>
+                </div>
+            {/volist}           
+                
+                    </div>
+    </div>
+</div>
+<script type="text/javascript">
+//	$(document).ready(function(){
+//		function insertHtmlToZhenxuan(objectId, item, mark, pos){
+//            pos = pos || "";
+//
+//            var html = ' <div class="list-index-unit">'+
+//                    '<a href="'+item['link']+'" pos = ' + pos + ' class="list-index-pic"><img width="360" src="'+item['main_pic'] +'"></a>'+
+//                   ' <div class="list-index-text">'+
+//                        '<div class="unit-index-title">'+
+//                            '<a href="'+item['link']+'">'+item['title'] +'</a>'+
+//                            '<span class="price"><em>￥</em>'+item['month_rent'] +'</span>'+
+//                        '</div>'+
+//                        '<div class="list-pic-ps">'+item['area_data'] +item['desc'] +'</div>'+
+//                        '<div class="pro-lab">';
+//                        $.each(item['labels'],function(k,v){
+//                            if ( k < 4) {
+//                               html += '<span>' + v + '</span>';
+//                            }
+//                        });
+//                html += '</div></div></div>';
+//
+//			$('#'+objectId).append(html);
+//		}
+//		var indexUrl = '/ajax/getIndexData';
+//        var pos  = 1;
+//
+//		$.getJSON(indexUrl,{},function (data) {
+//            var hezu = 0;
+//            var zhengzu = 0;
+//            var department = 0;
+//            $.each(data['hezu'],function(k,v){
+//                var item =v;
+//                var g = (parseInt(k) + 1);
+//                var mark = 'G10'+g
+//                insertHtmlToZhenxuan('index_hezu',item,mark, pos);
+//                hezu = 1;
+//                pos++;
+//            });
+//            if (hezu == 1) {
+//                $('#index_hezu').parent().show();
+//            }
+//            pos = 1;
+//            $.each(data['zhengzu'],function(kk,vv){
+//                var item1 = vv;
+//                var g = (parseInt(kk) + 1);
+//                var mark = 'G20'+g;
+//                insertHtmlToZhenxuan('index_zhengzu',item1,mark, pos);
+//                zhengzu = 1;
+//                pos++;
+//            });
+//            if (zhengzu == 1) {
+//                $('#index_zhengzu').parent().show();
+//            }
+//            pos = 1;
+//            $.each(data['department'],function(kkk,vvv){
+//                var item2 = vvv;
+//                var g = (parseInt(kkk) + 1);
+//                var mark = 'G30'+g
+//                insertHtmlToZhenxuan('index_department',item2,mark, pos);
+//                department = 1;
+//                pos++;
+//            });
+//            if (department == 1) {
+//                $('#index_department').parent().show();
+//            }
+//		});
+//	});
+//input search
+$('.search-input').focus(function() {
+    $('.search-bot').show();
+});
+$(document).click(function() {
+    $('.search-bot').hide();
+});
+$(".search-input").click(function(event){
+    event.stopPropagation();
+});
+// var isTurn=false;
+// $('.pageLink-unit-word').mouseover(function () {
+//     if(isTurn==false){
+//         $(this).next('.pageLink-unit-bg').animate({top:'0px'},250);
+//         isTurn=true;
+//     }
+// })
+// $('.pageLink-unit-word').mouseleave(function () {
+//     if(isTurn==true){
+//         $(this).next('.pageLink-unit-bg').animate({top:'240px'},250);
+//         isTurn=false;
+//         return;
+//     }
+    
+// })
+</script>
+</div>
+<script type="text/javascript" src="index/js/common.js?2"></script>
+<script type="text/javascript" src="index/js/popup.js?10"></script>
+<script type="text/javascript" src="index/js/search.js"></script>
+<script src="index/js/jquery.lazyload.js"></script>
+<div class="slogan" id='slogan'>
+    <div class="out">
+        <ul class="clearfix">
+            <li>
+                <p><i class="s-icon s-icon-mian"></i></p>
+                <h4>0元佣金</h4>
+            </li>
+            <li>
+                <p><i class="s-icon s-icon-yue"></i></p>
+                <h4>房租月付</h4>
+            </li>
+            <li>
+                <p><i class="s-icon s-icon-yu"></i></p>
+                <h4>在线预约</h4>
+            </li>
+            <li>
+                <p><i class="s-icon s-icon-zu"></i></p>
+                <h4>在线服务</h4>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="foot">
+    <div class="out clearfix">
+        <div class="foot-l about-link">
+            <dl>
+                <dt><a href="/about/">关于我们</a></dt>
+                <dd>
+                    <a href="http://partner.baletu.com" target="_blank">伙伴登录</a>
+                    <a href="/sitemap/">网站地图</a>
+                                    <a href="/shequ/" target="_blank">兔社区</a>
+                                </dd>
+            </dl>
+        </div>
+        <div class="foot-l about-link">
+            <dl>
+                <dt>合作公寓</dt>
+                <dd>
+                    <span>青年汇</span>
+                    <span>银桥公寓</span>
+                    <span>爱家精品公寓 ...</span>
+                </dd>
+            </dl>
+        </div>
+        <div class="foot-l about-link">
+            <dl>
+                <dt>意见反馈</dt>
+                <dd><a href="mailto:service@baletu.com">Mail：service@baletu.com</a></dd>
+            </dl>
+            <dl>
+                <dt><a href = "/contact/" target="_blank">联系客服</a></dt>
+                <dd>
+                    <p>400-183-0033</p>
+                    <p>周一～周日 8:00～23:00</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="foot-r clearfix">
+            <div class="code-pic">
+                <p>扫码下载巴乐兔APP</p>
+                <img id="foot_download_app" mark="底部" src="index/images/dapp-new-footer25.png"  data-rjs="//js.baletoo.cn/static/pc/images/mac/index/dapp-new-footer25@3x.png"/>
+            </div>
+            <div class="code-pic">
+                <p>扫码关注微信号</p>
+                <img src="index/images/codePic02.jpg" data-rjs="//js.baletoo.cn/static/pc/images/mac/index/codePic02@3x.png"/>
+            </div>
+        </div>
+        <div class="clear"></div>
+                <div class="f-link">
+            <dl>
+                <dt>友情链接</dt>
+                <dd>
+                                                                                                                                                                                                                                                                                                            <a href="http://gz.xyj321.com/">广州装修公司</a>
+                                                                                                                                                                                            <a href="http://www.jyall.com/sz/">深圳家园网</a>
+                                                                                                                                                                                            <a href="http://bbs.homedo.com/">智能建筑设计标准</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <a href="/friendly/friendlyLink">友情链接申请 > </a>
+                </dd>
+            </dl>
+        </div>
+                <div class="foot-pc">
+             ©2015  上海万间信息技术有限公司   &nbsp; &nbsp;
+             沪ICP备15004537号   &nbsp; &nbsp;
+             <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502006937" target="_blank" class="gongan">
+                 沪公网安备31011502006937号 &nbsp; &nbsp;
+             </a>
+             张江高科晨晖路88号1号楼4层
+         </div>
+    </div>
+</div>
+<script>
+	$(function() {
+		$("img.lazy").lazyload({
+			effect : "fadeIn"
+		});
+	});
+</script>
+<script>
+    seajs.use("monitor",function(mc){
+        mc.bindMonitor();
+    });
+</script>
+<noscript>
+    <div style="display:none;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="index/other/?guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/*aliim kit 式样修改 start*/
+body .wkit-powered-by{
+    display: none;
+}
+body .wkit-avatar-wrap{
+    display: none;
+}
+body #wkit-content .wkit-s .wkit-msg{
+   margin-right: 15px;
+}
+body #wkit-content .wkit-chat-wrap .wkit-soft-input{
+    height: 2px;
+    background: white;
+}
+body .wkit-msg-content{
+    border-bottom: 1px solid #D9D9D9;
+}
+body #wkit-content .wkit-chat-wrap .wkit-emot-trigger-wrap img{
+    width: 20px;
+    height: 20px;
+}
+body #wkit-content .wkit-chat-wrap .wkit-emot-trigger-wrap .wkit-emot-trigger{
+    width: 20px;
+    height: 20px;
+}
+body #wkit-content .wkit-chat-wrap .wkit-img-trigger-wrap{
+    width: 20px;
+    height: 20px;
+}
+body #wkit-content .wkit-chat-wrap .wkit-img-trigger-wrap .wkit-img-trigger{
+    width: 20px;
+}
+body #wkit-content .wkit-msg-send-btn{
+    background: #EE3844;
+    color: white;
+}
+body #wkit-content .wkit-r .wkit-msg{
+    margin-left:10px;
+}
+/*aliim kit 式样修改 end*/
+.im-wrapper{
+    width: 410px;
+    position: fixed;
+    bottom: 100px;
+    right: -410px;
+}
+.im-wrapper .title{
+    width: 410px;
+    height: 70px;
+    background: #36373C;
+    color: white;
+    display: none;
+}
+.im-wrapper .title img:first-child{
+    margin-left: 20px;
+    margin-top: 11px;
+    float: left;
+    width: 49px;
+    height: 49px;
+}
+.im-wrapper .title_word{
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    margin-left: 10px;
+    line-height: 70px;
+}
+.im-wrapper .title img:first-child + img{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor :pointer;
+    width: 20px;
+    height: 20px;
+}
+.im-container .im-img{
+    position: fixed;
+    bottom: 190px;
+    right: 14px;
+    width: 54px;
+    height: 54px;
+    box-shadow:0px 0px 9px 2px #cccccc; 
+    border-radius: 5px;
+}
+.im-container .im-img:hover + .im_prompt img{
+	display: block;
+}
+.im-wrapper .address{
+    width: 410px;
+    background: #F3F3F3;
+    line-height: 30px;
+    text-indent: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: none;
+}
+.clear{
+    clear: both;
+}
+.im_prompt img{
+	width: 99px;
+    height: 47px;
+	position: fixed;
+    bottom: 193px;
+    right: 69px;
+    display: none;
+}
+#toTOP .Totop{
+    position: fixed;
+    bottom: 120px;
+    right: 14px;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0px 0px 9px 2px #cccccc;
+    border-radius: 5px;
+}
+.Totop_div img{
+ width: 88px;
+ height: 37px;
+ position: fixed;
+ bottom: 130px;
+ right: 74px;
+ display: none;
+}
+.im-container .Totop:hover{
+    
+}
+.im-container .Totop:hover+.Totop_div img{
+    display: block;
+}
+   

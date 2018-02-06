@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>约见编辑-有点</title>
+<link rel="stylesheet" type="text/css" href="__ROOT__/admin/css/css.css" />
+<script type="text/javascript" src="__ROOT__/admin/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="pageAll">
+		<div class="pageTop">
+			<div class="page">
+				<img src="__ROOT__/admin/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+					href="#">预约管理</a>&nbsp;-</span>&nbsp;预约
+			</div>
+		</div>
+		<div class="page ">
+			<!-- 上传广告页面样式 -->
+			<div class="banneradd bor">
+				<div class="baTopNo">
+					<span>预约</span>
+				</div>
+				<div class="baBody">
+					<div class="bbD">预约ID：&nbsp;&nbsp;&nbsp;{$arr.appointment_id}</div>
+					<div class="bbD">
+						预约时间：&nbsp;&nbsp;&nbsp;{$arr.start}--{$arr.end}
+					</div>
+					<div class="bbD">
+						预约人姓名：&nbsp;&nbsp;&nbsp;{$arr.appointment_name}
+					</div>
+					<div class="bbD">
+						预约人性别：&nbsp;&nbsp;&nbsp;
+						<?php if($arr['appointment_sex']==1){
+								echo "男";
+							}else{
+								echo "女";
+							}
+						?>
+					</div>
+					<div class="bbD">
+						预约人手机号：&nbsp;&nbsp;&nbsp;{$arr.appointment_tel}
+					</div>
+					<div class="bbD">
+						<p class="bbDP">
+							<a class="btn_ok btn_yes" href="{:url('appointment/update')}?id={$arr.appointment_id}">通过</a>
+							<a class="btn_ok btn_no" href="{:url('appointment/updatedo')}?id={$arr.appointment_id}">驳回</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 上传广告页面样式end -->
+		</div>
+	</div>
+</body>
+</html>
